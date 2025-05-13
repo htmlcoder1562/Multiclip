@@ -1,6 +1,8 @@
 import pyperclip
 
 def save(slot):
+    if slot>9 or slot<0:
+        return "Invalid slot number"
     data=pyperclip.paste()
     with open("papersave.txt", "r") as file:
         filedata=file.read()
@@ -16,3 +18,10 @@ def save(slot):
             y+=1
         filedata.rstrip("\n")
         file.write(filedata)
+def load(slot):
+    if slot>9 or slot<0:
+        return "Invalid slot number"
+    with open("papersave.txt", "r") as file:
+        data=file.read()
+    data=data.split("\n")
+    return data[slot]
