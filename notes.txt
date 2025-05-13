@@ -1,0 +1,17 @@
+-- NOTES --
+
+clipget:
+The index for slot is starting at 0, going up to 9.
+
+papersave.txt:
+MUST have exactly 10 lines!!!
+
+notes.txt:
+These notes will change
+(Not sure why I added this...)
+
+LISCENCE:
+MIT
+
+app.py:
+Not any progress yet :(
